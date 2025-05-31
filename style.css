@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 20px;
+}
+
+#main-title {
+    color: #4a90e2;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.mode-toggle {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.mode-toggle:hover {
+    background-color: #357abd;
+}
+
+/* Estilos de la sección de términos */
+.terms-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.terms-section h2 {
+    color: #4a90e2;
+    font-size: 1.8rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.terms-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos de aceptación */
+.acceptance {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.acceptance label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.acceptance input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.3);
+}
+
+#continue-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#continue-btn:hover:not(:disabled) {
+    background-color: #357abd;
+}
+
+#continue-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .terms-section,
+.dark-mode .acceptance {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode #main-title,
+.dark-mode .terms-section h2 {
+    color: #64b5f6;
+}
+
+.dark-mode .mode-toggle {
+    background-color: #64b5f6;
+}
+
+.dark-mode .mode-toggle:hover {
+    background-color: #42a5f5;
+}
+
+.dark-mode footer {
+    color: #9e9e9e;
+}
